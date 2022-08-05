@@ -1,0 +1,89 @@
+.clipboard-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.clipboard-container span:nth-child(1){
+    color: var(--grayText);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.clipboard-container span:nth-child(2){
+    color: var(--blue);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.MuiList-root{
+    width: 19.5rem;
+    padding: 1rem 1.2rem !important;
+    border-radius: 2rem !important;
+}
+
+/* .muipopup1{
+    position: absolute;
+    right: 10%;
+    width: 22rem;
+    display: flex;
+    justify-content: center;
+} */
+
+.muipopup2{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.MuiList-root .inner{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.MuiList-root .heading{
+    color: #273371;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.MuiList-root .time-date {
+    display: flex;
+    flex-direction: column;
+}
+
+.MuiList-root .time-date span:nth-child(1){
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 9px;
+    color: var(--grayText);
+    margin-bottom: 6px;
+}
+
+.MuiList-root .time-date span:nth-child(2){
+    color: #151C1F !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.MuiList-root .show-all span{
+    color: var(--blue);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.MuiList-root .show-all span:nth-child(2){
+    font-size: 1rem;
+    margin-left: 5px;
+}
