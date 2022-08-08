@@ -1,41 +1,40 @@
-import React, { createContext,useContext,useState } from 'react'
-import Profile from '../images/profile.jpg'
-import * as bs from 'react-icons/bs'
-import * as io from 'react-icons/io'
-import * as fa from 'react-icons/fa'
-import logo from '../images/logo.png';
-import '../css/navbar.css'
-import { sidebarContext } from '../contexts/SidebarContext'
-import { folderMenuContext } from '../contexts/FolderMenu';
-import TopFolderMenu from './TopFolderMenu'
-
+import React, { createContext, useContext, useState } from "react";
+import logo from "../images/logo.png";
+import "../sass/navbar/navbar.css";
+import { sidebarContext } from "../contexts/SidebarContext";
+import { folderMenuContext } from "../contexts/FolderMenu";
+import TopFolderMenu from "./TopFolderMenu";
 
 const Navbar = () => {
-    const {isOpen} = useContext(sidebarContext);
-  const {openMenu,handleMenu} = useContext(folderMenuContext);
-  
+  const { isOpen } = useContext(sidebarContext);
+  const { openMenu, handleMenu } = useContext(folderMenuContext);
+
   return (
     <>
-     <nav className='navbar-menu' style={isOpen ? {paddingLeft: '.8rem'} : {paddingLeft: '3rem'}}>
+      <nav className={isOpen ? "navbar-menu pl-2" : "navbar-menu pl-4"}>
         {/* Left Section */}
         <div className="left">
-            <img src={logo} style={{width:'100%'}} alt="" />
+          <img src={logo} alt="" />
         </div>
 
         {/* Center Section */}
-            <div className="right-container">
-            <div className="center">
-                <span onClick={handleMenu}><bs.BsFolderFill /> </span>
-                {openMenu && <TopFolderMenu /> }
-                <span><io.IoMdNotifications /></span>
-                <span className='message'><fa.FaUser /></span>
-            </div>
-
-            </div>
-
-     </nav>
+        <div className="right-container">
+          <div className="center">
+            <span onClick={handleMenu}>
+              <i class="bi bi-folder-fill"></i>
+            </span>
+            {openMenu && <TopFolderMenu />}
+            <span>
+              <i class="bi bi-bell-fill"></i>
+            </span>
+            <span className="message">
+              <i class="bi bi-person-fill"></i>
+            </span>
+          </div>
+        </div>
+      </nav>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

@@ -1,0 +1,24 @@
+.save-search-menu {
+  height: 100%;
+  width: 16rem;
+  padding: 0.8rem 0.8rem;
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+  z-index: 999999;
+}
+
+.save-search-menu ul {
+  color: #2c52bf;
+  z-index: 999999;
+  background: white;
+  padding: 1rem 1rem;
+}
+
+.save-search-menu ul li {
+  cursor: pointer;
+  padding: 0.5rem 0rem;
+  font-size: 16px;
+  font-weight: 400;
+}
+/*# sourceMappingURL=save-search-menu.css.map */

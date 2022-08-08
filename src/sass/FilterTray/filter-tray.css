@@ -1,0 +1,39 @@
+.filter-tray {
+  width: 198px;
+  height: 38px;
+  padding: 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  position: absolute;
+  top: 2.2rem;
+  left: 8rem;
+  z-index: 99999;
+}
+
+.filter-tray span:nth-child(1) {
+  color: rgba(21, 28, 31, 0.6);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.filter-tray span:nth-child(2),
+.filter-tray span:nth-child(3) {
+  color: #2c52bf;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.filter-tray span:nth-child(4) {
+  color: #2c52bf;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=filter-tray.css.map */

@@ -1,0 +1,146 @@
+.user-search-top {
+  position: relative;
+  margin-left: 1.5rem !important;
+}
+
+.user-search-top .search-input {
+  position: relative;
+}
+
+.user-search-top .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.user-search-top .date #date-icon {
+  position: absolute;
+  right: 2rem;
+  color: #2c52bf;
+}
+
+.user-search-top .ust-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.8rem;
+}
+
+.user-search-top .ust-inner input[type="checkbox"] {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.user-search-top .date input {
+  border-radius: 80px;
+  border: 1px solid #2c52bf;
+  height: 2.2rem;
+  outline: none;
+  padding: 0 0.8rem;
+  width: 100%;
+}
+
+.user-search-top .date input::-webkit-input-placeholder {
+  color: #2c52bf;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.user-search-top .date input:-ms-input-placeholder {
+  color: #2c52bf;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.user-search-top .date input::-ms-input-placeholder {
+  color: #2c52bf;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.user-search-top .date input::placeholder {
+  color: #2c52bf;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.user-search-top .user-select,
+.user-search-top .company,
+.user-search-top .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6px;
+}
+
+.user-search-top .option-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-search-top .option-icon > * {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .user-search-top .user-select,
+  .user-search-top .company,
+  .user-search-top .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .user-search-top .date {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .user-search-top .date #date-icon {
+    right: 2rem;
+    top: 50%;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1910px) {
+  .user-search-top {
+    margin-left: 2rem !important;
+  }
+}
+/*# sourceMappingURL=user-search-top.css.map */

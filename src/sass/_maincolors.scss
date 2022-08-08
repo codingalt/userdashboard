@@ -1,0 +1,63 @@
+$primary-blue-100: rgba(39, 51, 113, 1);
+$primary-blue-80: rgba(39, 51, 113, 0.8);
+$primary-blue-60: rgba(39, 51, 113, 0.6);
+$primary-blue-40: rgba(39, 51, 113, 0.4);
+$primary-blue-20: rgba(39, 51, 113, 0.2);
+$primary-blue-10: rgba(39, 51, 113, 0.1);
+$primary-blue-05: rgba(39, 51, 113, 0.05);
+$secondary-blue-100: rgba(44, 82, 191, 1);
+$secondary-blue-80: rgba(44, 82, 191, 0.8);
+$secondary-blue-60: rgba(44, 82, 191, 0.6);
+$secondary-blue-40: rgba(44, 82, 191, 0.4);
+$secondary-blue-20: rgba(44, 82, 191, 0.2);
+$secondary-blue-10: rgba(44, 82, 191, 0.1);
+$primary-green-100: rgba(48, 206, 175, 1);
+$primary-green-80: rgba(48, 206, 175, 0.8);
+$primary-green-60: rgba(48, 206, 175, 0.6);
+$primary-green-40: rgba(48, 206, 175, 0.4);
+$primary-green-20: rgba(48, 206, 175, 0.2);
+$primary-green-10: rgba(48, 206, 175, 0.1);
+$neutral-100: rgba(21, 28, 31, 1);
+$neutral-80: rgba(21, 28, 31, 0.8);
+$neutral-60: rgba(21, 28, 31, 0.6);
+$neutral-40: rgba(21, 28, 31, 0.4);
+$neutral-20: rgba(21, 28, 31, 0.2);
+$neutral-10: rgba(21, 28, 31, 0.1);
+$neutral-05: rgba(21, 28, 31, 0.05);
+
+$body-bg: $primary-blue-05;
+$white: white;
+
+$custom-colors: (
+  "primary-blue-100": $primary-blue-100,
+  "primary-blue-80": $primary-blue-80,
+  "primary-blue-60": $primary-blue-60,
+  "primary-blue-40": $primary-blue-40,
+  "primary-blue-20": $primary-blue-20,
+  "primary-blue-10": $primary-blue-10,
+  "primary-blue-05": $primary-blue-05,
+  "secondary-blue-100": $secondary-blue-100,
+  "secondary-blue-80": $secondary-blue-80,
+  "secondary-blue-60": $secondary-blue-60,
+  "secondary-blue-40": $secondary-blue-40,
+  "secondary-blue-20": $secondary-blue-20,
+  "secondary-blue-10": $secondary-blue-10,
+  "primary-green-100": $primary-green-100,
+  "primary-green-80": $primary-green-80,
+  "primary-green-60": $primary-green-60,
+  "primary-green-40": $primary-green-40,
+  "primary-green-20": $primary-green-20,
+  "primary-green-10": $primary-green-10,
+  "neutral-100": $neutral-100,
+  "neutral-80": $neutral-80,
+  "neutral-60": $neutral-60,
+  "neutral-40": $neutral-40,
+  "neutral-20": $neutral-20,
+  "neutral-10": $neutral-10,
+  "neutral-05": $neutral-05,
+  "body": $body-bg,
+  "white": $white,
+  "transparent": "transparent",
+);
+
+$border-color: $secondary-blue-100;

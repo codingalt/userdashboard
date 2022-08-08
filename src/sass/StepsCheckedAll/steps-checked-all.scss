@@ -1,0 +1,56 @@
+@import "../maincolors";
+
+.checked-all .right-side .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checked-all .row .col-lg-8 {
+  border-right: 1.8px solid #a9adc6;
+}
+
+.tabs-table-wrapper .table-responsive tbody {
+  font-size: 0.9rem;
+}
+
+.checked-all .header span:nth-child(1) {
+  color: $neutral-60;
+}
+
+.checked-all .header span:nth-child(2) > * {
+  color: #2c52bf !important;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.checked-all .right-side .d-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: $secondary-blue-10;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+}
+
+.checked-all .right-side .d-flex > div:nth-child(1) {
+  display: flex;
+  gap: 15px;
+}
+
+.checked-all .right-side .d-flex .icon {
+  cursor: pointer;
+}
+
+.checked-all .right-side .d-flex > div:nth-child(1) span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #151c1f;
+}
+
+.checked-all .table tr td:nth-child(1) {
+  font-weight: 500;
+  font-size: 0.8rem;
+}

@@ -1,113 +1,124 @@
 import React, { useState, useContext } from "react";
-import Profile from "../images/profile.jpg";
-import "../css/sidebar.css";
+import "../sass/sidebar/sidebar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import * as bi from "react-icons/bi";
-import * as ai from "react-icons/ai";
-import * as si from "react-icons/si";
 import * as io from "react-icons/io";
-import * as ri from "react-icons/ri";
-import * as md from "react-icons/md";
 import * as bs from "react-icons/bs";
-import processIcon from '../images/process_icon.png';
-import liveIcon from '../images/live_icon.png';
-import footerLogo from '../images/footer_logo.png';
+import footerLogo from "../images/footer_logo.png";
 import { sidebarContext } from "../contexts/SidebarContext";
 
 const Sidebar = () => {
   const [activeLink, setActiveLink] = useState(1);
-  const [subMenu,setSubMenu] = useState(false);
-  const { isOpen,toggle } = useContext(sidebarContext);
+  const [subMenu, setSubMenu] = useState(false);
+  const { isOpen, toggle } = useContext(sidebarContext);
 
   return (
     <>
-      <aside
-        className={isOpen ? "sidebar" : "sidebar activeSidebar"}
-      >
+      <aside className={isOpen ? "sidebar" : "sidebar activeSidebar"}>
         {/* Sidebar Header */}
         <div className="sidebar-header">
-          <bs.BsArrowLeft onClick={toggle} />
-          </div>
-      
+          {isOpen ? (
+            <bs.BsArrowLeft onClick={toggle} />
+          ) : (
+            <bs.BsArrowRight onClick={toggle} />
+          )}
+        </div>
+
         {/* Sidebar Links */}
         <div className="sidebar-menu">
           <div className="sidebar-links">
-            <ul
-              style={
-                isOpen ? { paddingLeft: "1.2rem" } : { paddingLeft: ".5rem" }
-              }
-            >
+            <ul className={isOpen ? "sidebarul-12" : "sidebarul05"}>
               <li
                 onClick={() => setActiveLink(1)}
                 className={activeLink == 1 ? "active" : ""}
               >
                 <a href="#" className={activeLink == 1 ? "white" : ""}>
                   <span className={activeLink == 1 ? "white" : ""}>
-                    <md.MdSpaceDashboard
-                      style={
+                    <i
+                      class={
                         isOpen
-                          ? { marginLeft: "0px" }
-                          : { marginLeft: "17px", fontSize: "30px" }
+                          ? "bi bi-grid-1x2-fill ml-0"
+                          : "bi bi-grid-1x2-fill sidebari-style"
                       }
-                    />
+                    ></i>
                   </span>
                   <span className={isOpen ? "" : "sidebar-txt"}>Dashboard</span>
                 </a>
-              
               </li>
               <li
                 onClick={() => setActiveLink(2)}
                 className={activeLink == 2 ? "active" : ""}
               >
                 <a href="#" className={activeLink == 2 ? "white" : ""}>
-                  
-                  <img src={processIcon} alt="" />
+                  <span className={activeLink == 2 ? "white" : ""}>
+                    <i
+                      class={
+                        isOpen
+                          ? "bi bi-list-columns ml-0"
+                          : "bi bi-list-columns sidebari-style"
+                      }
+                    ></i>
+                  </span>
                   <span className={isOpen ? "" : "sidebar-txt"}>Processes</span>
                 </a>
-            
               </li>
               <li
-                onClick={() => {setActiveLink(3);}}
+                onClick={() => {
+                  setActiveLink(3);
+                }}
                 className={activeLink == 3 ? "active" : ""}
               >
                 <a href="#" className={activeLink == 3 ? "white" : ""}>
-               
-                  <img src={liveIcon} alt="" />
-                  <span className={isOpen ? "" : "sidebar-txt"}>Executions</span>
+                  <span className={activeLink == 3 ? "white" : ""}>
+                    <i
+                      class={
+                        isOpen
+                          ? "bi bi-collection-play ml-0"
+                          : "bi bi-collection-play sidebari-style"
+                      }
+                    ></i>
+                  </span>
+                  <span className={isOpen ? "" : "sidebar-txt"}>
+                    Executions
+                  </span>
                 </a>
-            
               </li>
               <li
-                onClick={() => {setActiveLink(4); setSubMenu(!subMenu);}}
+                onClick={() => {
+                  setActiveLink(4);
+                  setSubMenu(!subMenu);
+                }}
                 className={activeLink == 4 ? "active" : ""}
               >
                 <a href="#" className={activeLink == 4 ? "white" : ""}>
                   <span className={activeLink == 4 ? "white" : ""}>
-                    <ai.AiOutlineBars
-                      style={
+                    <i
+                      class={
                         isOpen
-                          ? { marginLeft: "0px" }
-                          : { marginLeft: "17px", fontSize: "30px" }
+                          ? "bi bi-list-stars ml-0"
+                          : "bi bi-list-stars sidebari-style"
                       }
-                    />
+                    ></i>
                   </span>
                   <span className={isOpen ? "" : "sidebar-txt"}>Events</span>
                 </a>
                 {isOpen && (
                   <p>
-                    {subMenu ? <io.IoIosArrowUp /> : <io.IoIosArrowDown />}
-                    {" "}
+                    {subMenu ? (
+                      <i class="bi bi-chevron-up"></i>
+                    ) : (
+                      <i class="bi bi-chevron-down"></i>
+                    )}{" "}
                   </p>
                 )}
               </li>
 
               {/* Sub Menu  */}
-              {subMenu &&
-              <ul className="sub-menu">
-                <li>User Actions</li>
-                <li>Events</li>
-              </ul>
-              }
+              {subMenu && (
+                <ul className="sub-menu">
+                  <li>User Actions</li>
+                  <li>Events</li>
+                </ul>
+              )}
 
               <li
                 onClick={() => setActiveLink(5)}
@@ -115,19 +126,21 @@ const Sidebar = () => {
               >
                 <a href="#" className={activeLink == 5 ? "white" : ""}>
                   <span className={activeLink == 5 ? "white" : ""}>
-                    <si.SiGoogleanalytics
-                      style={
+                    <i
+                      class={
                         isOpen
-                          ? { marginLeft: "0px" }
-                          : { marginLeft: "17px", fontSize: "30px" }
+                          ? "bi bi-bar-chart-line-fill ml-0"
+                          : "bi bi-bar-chart-line-fill sidebari-style"
                       }
-                    />
+                    ></i>
                   </span>
-                  <span className={isOpen ? "" : "sidebar-txt"}>Statistics</span>
+                  <span className={isOpen ? "" : "sidebar-txt"}>
+                    Statistics
+                  </span>
                 </a>
                 {isOpen && (
                   <p>
-                    <io.IoIosArrowDown />{" "}
+                    <i class="bi bi-chevron-down"></i>
                   </p>
                 )}
               </li>
@@ -137,29 +150,28 @@ const Sidebar = () => {
               >
                 <a href="#" className={activeLink == 6 ? "white" : ""}>
                   <span className={activeLink == 6 ? "white" : ""}>
-                    <ai.AiOutlineUsergroupAdd
-                      style={
+                    <i
+                      class={
                         isOpen
-                          ? { marginLeft: "0px" }
-                          : { marginLeft: "17px", fontSize: "30px" }
+                          ? "bi bi-people-fill ml-0"
+                          : "bi bi-people-fill sidebari-style"
                       }
-                    />
+                    ></i>
                   </span>
                   <span className={isOpen ? "" : "sidebar-txt"}>Users</span>
                 </a>
                 {isOpen && (
                   <p>
-                    <io.IoIosArrowDown />{" "}
+                    <i class="bi bi-chevron-down"></i>
                   </p>
                 )}
               </li>
             </ul>
           </div>
         </div>
-       
 
-<div className="sidebar-footer">
-        <img src={footerLogo} alt="" />
+        <div className="sidebar-footer">
+          <img src={footerLogo} alt="" />
         </div>
       </aside>
     </>

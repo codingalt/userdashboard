@@ -1,15 +1,14 @@
-import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import TopFolderMenu from './components/TopFolderMenu';
+import "./sass/main.css";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 function App() {
   return (
     <>
       <Routes>
-      <Route path='/' element={<Home />} />
+        <Route path="/" element={<Home />} />
       </Routes>
-    
     </>
   );
 }

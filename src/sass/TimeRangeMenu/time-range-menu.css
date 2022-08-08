@@ -1,0 +1,102 @@
+.time-range {
+  width: auto;
+  background: white;
+  padding: 1rem 1rem;
+  position: absolute;
+  top: 92%;
+  left: 10%;
+  z-index: 1000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.time-range .button span {
+  font-size: 1rem;
+  color: #2c52bf;
+}
+
+.time-range .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.6rem;
+  border-right: 2px solid rgba(39, 51, 113, 0.4);
+  padding-right: 1rem;
+}
+
+.time-range .left label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(21, 28, 31, 0.6);
+}
+
+.time-range .left > div:nth-child(3) span {
+  cursor: pointer;
+  text-align: right;
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+.time-range .left > div:nth-child(3) span:hover {
+  background: #f4f5f8;
+}
+
+.time-range .left > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.time-range .left > div:nth-child(2) {
+  gap: 1.4rem;
+}
+
+.time-range .right ul li {
+  color: #2c52bf;
+  padding: 0.8rem 0rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1910px) {
+  .time-range {
+    top: 95%;
+    left: 16%;
+  }
+  .filter-tray {
+    top: 2.7rem;
+    left: 10% !important;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .time-range {
+    top: 45%;
+    left: 28%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .time-range {
+    top: 33%;
+    left: 16%;
+    width: 80vw;
+  }
+}
+/*# sourceMappingURL=time-range-menu.css.map */

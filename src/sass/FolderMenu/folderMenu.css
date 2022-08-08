@@ -1,0 +1,96 @@
+.clipboard-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.clipboard-container span:nth-child(1) {
+  color: rgba(21, 28, 31, 0.8);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.clipboard-container span:nth-child(2) {
+  color: #2c52bf;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.MuiList-root {
+  width: 19.5rem;
+  padding: 1rem 1.2rem !important;
+  border-radius: 2rem !important;
+}
+
+.muipopup2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.MuiList-root .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.MuiList-root .heading {
+  color: #273371;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.MuiList-root .time-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.MuiList-root .time-date span:nth-child(1) {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 9px;
+  color: rgba(21, 28, 31, 0.8);
+  margin-bottom: 6px;
+}
+
+.MuiList-root .time-date span:nth-child(2) {
+  color: #151c1f !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.MuiList-root .show-all span {
+  color: #2c52bf;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.MuiList-root .show-all span:nth-child(2) {
+  font-size: 1rem;
+  margin-left: 5px;
+}
+/*# sourceMappingURL=folderMenu.css.map */

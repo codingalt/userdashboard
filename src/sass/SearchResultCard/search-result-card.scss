@@ -1,0 +1,66 @@
+@import "../maincolors";
+
+.search-content-wrapper {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.search-content-wrapper .content-inner {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 17px;
+  position: relative;
+}
+
+.s-result-card #select {
+  width: 10rem;
+  margin-left: 0.9rem;
+}
+
+.s-result-card .approx-res span {
+  color: $neutral-60;
+  font-size: 15px;
+}
+
+.search-content-wrapper .title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: $secondary-blue-100;
+}
+
+.search-content-wrapper .sub-title {
+  max-width: 97%;
+}
+
+.sub-title span:nth-child(1) {
+  color: $neutral-80;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.sub-title span:nth-child(2) {
+  margin-right: 3px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: $neutral-80;
+}
+
+.search-content-wrapper .time span {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 22px;
+  color: $neutral-80;
+}
+
+.search-content-wrapper .star-icon {
+  position: absolute;
+  right: 0%;
+  top: 26%;
+  color: $secondary-blue-100;
+  font-size: 1.1rem;
+}
