@@ -171,7 +171,7 @@ const Sidebar = () => {
         </div>
 
         <div className="sidebar-footer">
-          <img src={footerLogo} alt="" />
+          {/* <img src={footerLogo} alt="" /> */}
         </div>
       </aside>
     </>

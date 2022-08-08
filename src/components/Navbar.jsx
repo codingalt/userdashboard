@@ -14,7 +14,8 @@ const Navbar = () => {
       <nav className={isOpen ? "navbar-menu pl-2" : "navbar-menu pl-4"}>
         {/* Left Section */}
         <div className="left">
-          <img src={logo} alt="" />
+          {/* <img src={logo} alt="" /> */}
+          <h4 className="text-white my-auto">Website Logo</h4>
         </div>
 
         {/* Center Section */}
