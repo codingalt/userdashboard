@@ -1,6 +1,4 @@
 import React, { useContext } from "react";
-import * as io from "react-icons/io";
-import * as gr from "react-icons/gr";
 import { folderMenuContext } from "../contexts/FolderMenu";
 import "../sass/FilterTray/filter-tray.css";
 

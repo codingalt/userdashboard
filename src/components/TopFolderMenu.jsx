@@ -12,10 +12,9 @@ const TopFolderMenu = () => {
 
   return (
     <Menu
-      className="muipopup1"
+      id="muipopup1"
       open={openMenu}
       onClose={closeMenu}
-      style={{ top: "6%", right: "40% !important" }}
       transformOrigin={{ horizontal: "right", vertical: "top" }}
       anchorOrigin={{ horizontal: "right", vertical: "top" }}
     >

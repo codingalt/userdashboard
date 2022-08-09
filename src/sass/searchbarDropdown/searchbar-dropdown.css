@@ -6,6 +6,7 @@
 
 .dropdown-searchbar #search-icon {
   right: 3.2rem;
+  top: 18%;
 }
 
 .dropdown-searchbar input {
@@ -16,7 +17,7 @@
 .dropdown-searchbar .arrow-down {
   position: absolute;
   right: 1.5%;
-  top: 0%;
+  top: 8%;
   bottom: 0;
   margin: auto;
   border-left: 1px solid #2c52bf;
@@ -35,7 +36,7 @@
 
 .dropdown-searchbar .arrow-down > * {
   color: #2c52bf;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 @media screen and (min-width: 1910px) {

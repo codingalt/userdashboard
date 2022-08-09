@@ -1,7 +1,6 @@
 import React, { useState, useContext } from "react";
 import "../sass/SearchedStepsCard/searched-steps-card.css";
 import * as bs from "react-icons/bs";
-import * as gr from "react-icons/gr";
 import SelectBox from "./SelectBox";
 import SearchbarWithDropdown from "./SearchbarWithDropdown";
 import StepsTable from "./StepsTable";

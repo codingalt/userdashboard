@@ -61,8 +61,8 @@ const Home = () => {
 
           {/* <ResultCard /> */}
           {/* <SearchResultCard /> */}
-          <SearchedStepsCard />
-          {/* <SearchedStepsCheckedAll /> */}
+          {/* <SearchedStepsCard /> */}
+          <SearchedStepsCheckedAll />
           {/* <AuditStepsCard /> */}
         </main>
       </folderMenuContext.Provider>

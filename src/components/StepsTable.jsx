@@ -82,7 +82,7 @@ const StepsTable = () => {
             <td>0</td>
             <td>0</td>
             <td>
-              <bs.BsBoxArrowUpRight />
+              <i class="bi bi-box-arrow-up-right"></i>
             </td>
           </tr>
           <tr>
@@ -95,7 +95,7 @@ const StepsTable = () => {
             <td>0</td>
             <td>0</td>
             <td>
-              <bs.BsBoxArrowUpRight />
+              <i class="bi bi-box-arrow-up-right"></i>
             </td>
           </tr>
           <tr>

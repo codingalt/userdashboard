@@ -1,5 +1,4 @@
 import React, { createContext, useContext, useState } from "react";
-import logo from "../images/logo.png";
 import "../sass/navbar/navbar.css";
 import { sidebarContext } from "../contexts/SidebarContext";
 import { folderMenuContext } from "../contexts/FolderMenu";

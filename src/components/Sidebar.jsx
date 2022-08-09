@@ -17,9 +17,9 @@ const Sidebar = () => {
         {/* Sidebar Header */}
         <div className="sidebar-header">
           {isOpen ? (
-            <bs.BsArrowLeft onClick={toggle} />
+            <i class="bi bi-arrow-left" onClick={toggle}></i>
           ) : (
-            <bs.BsArrowRight onClick={toggle} />
+            <i class="bi bi-arrow-right" onClick={toggle}></i>
           )}
         </div>
 

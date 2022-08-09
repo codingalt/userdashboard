@@ -1,7 +1,5 @@
 import React, { useContext } from "react";
 import "../sass/searchbarDropdown/searchbar-dropdown.css";
-import * as ti from "react-icons/ti";
-import * as bs from "react-icons/bs";
 import { folderMenuContext } from "../contexts/FolderMenu";
 
 const SearchbarWithDropdown = () => {
@@ -10,10 +8,10 @@ const SearchbarWithDropdown = () => {
     <>
       <div className="dropdown-searchbar">
         <input type="text" id="searchbar" placeholder="Search" />
-        <bs.BsSearch className="search-icon" id="search-icon" />
+        <i className="search-icon bi bi-search" id="search-icon"></i>
         <div className="arrow-down" onClick={handleFilterTray}>
           <span>
-            <ti.TiArrowSortedDown />
+          <i class="bi bi-caret-down-fill"></i>
           </span>
         </div>
       </div>

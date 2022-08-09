@@ -229,7 +229,7 @@ const SearchedStepsCheckedAll = () => {
                       <span>Click Ok</span>
                     </div>
                     <div className="icon">
-                      <io.IoIosArrowDown />
+                    <i class="bi bi-chevron-down"></i>
                     </div>
                   </div>
                 </div>

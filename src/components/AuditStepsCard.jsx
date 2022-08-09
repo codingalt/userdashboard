@@ -34,7 +34,7 @@ const AuditStepsCard = () => {
             </div>
           </div>
           <div className="right" onClick={handleMenu}>
-            <bs.BsThreeDots />
+            <i class="bi bi-three-dots"></i>
           </div>
 
           {/* POP Up Menu  */}
