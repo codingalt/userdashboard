@@ -1,4 +1,4 @@
-@import "colors";
+@import "./maincolors";
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,500;1,700;1,900&display=swap");
 
@@ -19,7 +19,7 @@
   margin-left: 270px;
   padding-left: 1px;
   transition: all 0.3s;
-  background: $background;
+  background: $body-bg;
 }
 
 .main-reverse {
@@ -28,10 +28,14 @@
   transition: all 0.3s;
 }
 
+#main-top-title {
+  color: $neutral-60;
+}
+
 #searchbar {
   width: 100%;
   height: 2.3rem;
-  border: 1px solid $blue;
+  border: 1px solid $secondary-blue-100;
   border-radius: 88px;
   outline: none;
   padding-left: 1rem;
@@ -40,7 +44,7 @@
 input[type="date"] {
   width: 100%;
   height: 2.1rem;
-  border: 1px solid $blue;
+  border: 1px solid $secondary-blue-100;
   border-radius: 80px;
   outline: none;
   padding-left: 1rem;
@@ -51,7 +55,7 @@ input[type="date"] {
   position: absolute;
   right: 2rem;
   font-size: 1.1rem;
-  color: $blue;
+  color: $secondary-blue-100;
   top: 0;
   bottom: 0;
   margin: auto;
@@ -60,11 +64,11 @@ input[type="date"] {
 #select {
   height: 2.2rem;
   width: 100%;
-  border: 1px solid $blue;
+  border: 1px solid $secondary-blue-100;
   outline: none;
   border-radius: 80px;
   font-weight: 600;
-  color: $blue;
+  color: $secondary-blue-100;
   font-size: 12px;
 }
 
@@ -73,7 +77,7 @@ option {
 }
 
 #label {
-  color: $textLight;
+  color: $neutral-60;
   font-weight: 500;
   line-height: 16px;
   font-style: normal;

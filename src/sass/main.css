@@ -18,7 +18,7 @@
   padding-left: 1px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background: #f5f5f5;
+  background: rgba(39, 51, 113, 0.05);
 }
 
 .main-reverse {
@@ -26,6 +26,10 @@
   padding-left: 0px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+#main-top-title {
+  color: rgba(21, 28, 31, 0.6);
 }
 
 #searchbar {
@@ -73,7 +77,7 @@ option {
 }
 
 #label {
-  color: #737779;
+  color: rgba(21, 28, 31, 0.6);
   font-weight: 500;
   line-height: 16px;
   font-style: normal;

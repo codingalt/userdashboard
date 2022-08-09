@@ -49,16 +49,8 @@ const Home = () => {
           {/* Navbar */}
           <Navbar />
 
-          <div
-            className=""
-            style={
-              active
-                ? { padding: "1.6rem" }
-                : { paddingLeft: "4rem", paddingTop: "1.8rem" }
-            }
-          >
-            <span style={{ color: "#737779" }} className="mt-2">
-              {" "}
+          <div className="py-4 px-5">
+            <span id="main-top-title" className="mt-2">
               User Actions
             </span>
           </div>
